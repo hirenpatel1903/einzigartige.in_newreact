@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseURL = 'https://ammelias-laravel.itech-theme.com/api/';
+// const baseURL = 'https://einzigartige.in/api/';
+const baseURL = 'http://127.0.0.1:8000/api/';
 
 function request(url) {
     const headers = {
