@@ -1,0 +1,115 @@
+.heroAreaWapper{
+  padding: 100px 0 120px;
+  position: relative;
+  z-index: 1;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding: 60px 0 90px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 80px 0;
+  }
+  @media (max-width: 767px) {
+    padding: 40px 0 0;
+  }
+  .heroContent{
+    @media (max-width: 1350px) {
+      padding: 0 15px;
+    }
+    &.textCenter{
+      text-align: center;
+      .popupVideoBtn{
+        margin: auto;
+        margin-bottom: 30px;
+      }
+    }
+    .popupVideoBtn{
+      height: 100px;
+      width: 100px;
+      background: #ff675f;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 100px;
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      margin-bottom: 30px;
+      @media (max-width: 767px) {
+        height: 80px;
+        width: 80px;
+        line-height: 84px;
+        font-size: 19px;
+        margin-bottom: 20px;
+      }
+    }
+    strong{
+      display: block;
+      font-size: 22px;
+      font-weight: 600;
+      color: #0EC64E;
+      letter-spacing: 0;
+      margin-bottom: 17px;
+      @media (min-width: 1201px) and (max-width: 1599px) {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 20px;
+        margin-bottom: 7px;
+      }
+      @media (max-width: 767px) {
+        font-size: 17px;
+        margin-bottom: 0;
+      }
+    }
+    h2{
+      font-size: 58px;
+      font-weight: 700;
+      color: #181818;
+      line-height: 68px;
+      letter-spacing: 0;
+      margin-bottom: 31px;
+      font-family: 'Futura', sans-serif;
+      @media (min-width: 1201px) and (max-width: 1599px) {
+        font-size: 46px;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        font-size: 38px;
+        line-height: 53px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 43px;
+      }
+      @media (max-width: 767px) {
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 600;
+      }
+    }
+    p{
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+      line-height: 28px;
+      margin-bottom: 35px;
+      @media (max-width: 767px) {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .hrRighThumb{
+    margin-right: 20px;
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
+  }
+  .bgShape1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+    transform: translateY(-50%);
+    opacity: 0.6;
+  }
+}

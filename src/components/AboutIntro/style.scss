@@ -1,0 +1,77 @@
+.aboutIntroWrapper{
+  padding: 120px 0;
+  position: relative;
+  z-index: 1;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding: 90px 0 0;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 80px 0 0;
+  }
+  @media (max-width: 767px) {
+    padding: 60px 0 0;
+  }
+  .thumb{
+    border-radius: 26px;
+    box-shadow: 0 0 21px rgba(0,0,0,0.18);
+    overflow: hidden;
+    @media (max-width: 767px) {
+      -webkit-border-radius: 14px;
+      -moz-border-radius: 14px;
+      border-radius: 14px;
+    }
+  }
+  .introList{
+    margin-bottom: 30px;
+    padding-right: 60px;
+    position: relative;
+    &:hover{
+      >span{
+        background: #28dd67;
+        color: #fff;
+      }
+    }
+    >span{
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 40px;
+      width: 40px;
+      border: 1px dashed #d0d8d2;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      font-weight: 600;
+      transition: all 0.3s ease 0s;
+    }
+    &:last-child{
+      margin: 0;
+    }
+    h4{
+      font-size: 22px;
+      color: #2f2f2f;
+      margin-bottom: 10px;
+      @media (max-width: 767px) {
+        font-size: 17px;
+      }
+    }
+    p{
+      font-size: 15px;
+      font-weight: 400;
+      color: #6c6c6c;
+    }
+  }
+  .abdtdotShape{
+    position: absolute;
+    right: 15%;
+    top: 7%;
+    z-index: -1;
+    max-width: 400px;
+    @media (min-width: 992px) and (max-width: 1200px) {
+      left: 0;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

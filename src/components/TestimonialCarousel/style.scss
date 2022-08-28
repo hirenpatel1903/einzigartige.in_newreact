@@ -1,0 +1,99 @@
+@import "../../mixin";
+
+.testimonialCarousel{
+  .slick-slider{
+    margin-top: -85px;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
+    .slick-arrow{
+      position: absolute;
+      left: 42%;
+      bottom: 0;
+      z-index: 9;
+      cursor: pointer;
+      &.slick-next{
+        bottom: 7px;
+        left: auto;
+        right: 42%;
+      }
+    }
+  }
+  .slick-slide{
+    padding: 0 100px;
+    padding-top: 95px;
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+      padding: 0 15px;
+    }
+  }
+  .tstItem{
+    text-align: center;
+    p{
+      font-size: 17px;
+      color: #444444;
+      line-height: 30px;
+      position: relative;
+      z-index: 1;
+      @media (max-width: 767px) {
+        font-size: 17px;
+      }
+      @media (max-width: 767px) {
+          text-align: center;
+      }
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        @media (min-width: 992px) and (max-width: 1200px) {
+          max-width: 100px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+          max-width: 80px;
+        }
+        @media (max-width: 767px) {
+          max-width: 60px;
+          transform: none;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+    .tstAuthor{
+      margin-top: 40px;
+      .avatar{
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: 35px;
+        overflow: hidden;
+        box-shadow: 0 15px 22px rgba(0,0,0,0.25);
+        border: 1px dashed $theme_color;
+        img{
+          height: 75px;
+          width: 75px;
+        }
+      }
+      h4{
+        font-size: 22px;
+        color: #272727;
+      }
+      strong{
+        font-size: 18px;
+        color: #606060;
+        font-weight: 400;
+        letter-spacing: 0;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
+  .slick-arrow{
+    //background: #000;
+  }
+}

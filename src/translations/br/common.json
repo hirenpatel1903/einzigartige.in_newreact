@@ -1,0 +1,55 @@
+{
+    "contact": {
+        "pagename": "Contate-Nos",
+        "banner_title": "Onde estamos? Vamos descobrir!",
+        "contact_number": "+1-202-555-0101",
+        "ContactNumberTitle": "Número de contato",
+        "EmailAddressTitle": "Endereço de e-mail",
+        "OfficeLocationTitle": "Localização do escritório",
+        "OfficeLocationAddress": "62 Arlington St. Suite 100 Boston, CA 01117, EUA"
+    },
+    "newsLetter": {
+        "Title1": "O que o seu",
+        "Title2": "desafios?",
+        "SubTitle": "Boletim de Notícias",
+        "Description": "Inscreva-se hoje para ter certeza de que está atualizado sobre a vida na RSD e o setor que nos cerca. informações sobre a atividade da agência digital",
+        "SubscribtionNotice": "Inscreva-se para receber atualizações por e-mail ",
+        "SubscribtionNoticeDay": "( apenas uma vez por semana )"
+    },
+    "Home": {
+        "HeroArea": {
+            "Title": "UMA AGÊNCIA CRIATIVA DE SERVIÇO COMPLETO",
+            "SubTitle": "Sempre estamos prontos para ajudá-lo",
+            "Description": "Sed ac risus vitae eros volutpat sempre eget ac felis. Nulla sollicitudin tempor libero eget sodales.",
+            "ButtonText": "Sobre nós"
+        },
+        "Testimonial": {
+            "Subtitle": "Depoimento"
+        },
+        "PricingPlan": {
+            "Title": "Plano de preços acessíveis para o cliente",
+            "SubTitle": "Plano de preços",
+            "Description": "Nam quis laoreet nisl. Vivamus nec quam magna.interdum etus blandit hendrerit ornare. Sed id leo nulla.",
+            "Monthly": "Por mês",
+            "Yearly": "Anual"
+        },
+        "OurExpert": {
+            "Title": "Conheça nosso membro da equipe",
+            "SubTitle": "Nosso especialista"
+        },
+        "BlogSection": {
+            "Title": "Confira as notícias da nossa empresa",
+            "SubTitle": "Nosso blog"
+        },
+        "ContactUs": {
+            "Title": "Tem um problema com o contato conosco.",
+            "SubTitle": "Contate-Nos"
+        }
+    },
+    "Footer": {
+        "Copyright": "Direitos autorais 2019 Ammelias",
+        "QuickLink": "Link rápido",
+        "Services": "Serviços",
+        "Newsletter": "Boletim de Notícias"
+    }
+}

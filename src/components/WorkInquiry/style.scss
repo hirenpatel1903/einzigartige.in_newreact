@@ -1,0 +1,22 @@
+.hasMb{
+    padding-bottom: 120px!important;
+  @media (min-width: 768px) and (max-width: 1200px) {
+    padding-bottom: 80px!important;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 70px!important;
+  }
+}
+.textContent{
+  h5{
+    p{
+      font-size: 20px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 19px;
+      }
+      @media (max-width: 767px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

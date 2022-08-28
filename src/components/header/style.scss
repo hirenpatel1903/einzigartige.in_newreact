@@ -1,0 +1,280 @@
+@import "../../mixin";
+
+.header {
+  padding: 15px 100px;
+  position: relative;
+  z-index: 999;
+  @media (max-width: 767px) {
+    padding: 10px;
+  }
+
+  .phone {
+    color: #444444;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 23px;
+    @media (min-width: 1201px) and (max-width: 1599px) {
+      font-size: 15px;
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      font-size: 16px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 15px;
+    }
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
+  }
+
+  &.fixedHeader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: transparent;
+
+    .mainMenu {
+      ul li a,
+      .hasSubMenu {
+        color: #ffffff;
+
+        &.active,
+        &:hover {
+          color: #0b0b29!important;
+        }
+      }
+    }
+
+    .phone {
+      color: #ffffff;
+    }
+
+    .searchBtn {
+      color: #ffffff;
+    }
+
+    .hmBurgerBtn span {
+      background: #ffffff;
+    }
+
+    .cBtn {
+      background: #ffffff;
+      color: #16cc55;
+      font-weight: 500;
+
+      &:hover {
+        background: transparent;
+        color: #ffffff;
+        border-color: #fff;
+      }
+    }
+
+    .humbergur span {
+      background: #ffffff;
+    }
+  }
+
+  .logo {
+    a {
+      display: inline-block;
+
+      img {
+        width: 110px;
+      }
+    }
+  }
+
+  .mainMenu {
+    ul {
+      li {
+        display: inline-block;
+        width: auto;
+        padding: 15px 0;
+
+        &.hasSubMenu:hover {
+          > ul {
+            top: 100%;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        &.hasSubMenu {
+          position: relative;
+          z-index: 2;
+
+          font-size: 17px;
+          font-weight: 500;
+          color: #282828;
+          letter-spacing: 0;
+          margin-right: 34px;
+          cursor: pointer;
+
+          @media (min-width: 1201px) and (max-width: 1599px) {
+            font-size: 17px;
+            margin-right: 27px;
+          }
+
+          ul {
+            position: absolute;
+            left: 0;
+            top: 105%;
+            z-index: 9;
+            background: #ffffff;
+            width: 250px;
+            padding: 15px;
+            -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease 0s;
+
+            li {
+              display: block;
+              padding: 10px 0;
+
+              a {
+                font-size: 16px;
+                color: #444444;
+
+                &:hover,
+                &.active {
+                  color: $theme_color;
+                }
+              }
+            }
+          }
+        }
+
+        a {
+          font-size: 17px;
+          display: block;
+          color: #282828;
+          letter-spacing: 0;
+          margin-right: 34px;
+          font-weight: 500;
+          @media (min-width: 1201px) and (max-width: 1599px) {
+            font-size: 17px;
+            margin-right: 27px;
+          }
+
+          &:hover,
+          &.active {
+            color: $theme_color;
+          }
+        }
+      }
+    }
+  }
+
+  .searchBtn {
+    margin-right: 25px;
+    display: inline-block;
+    color: #282828;
+    font-size: 19px;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+
+  .hmBurgerBtn {
+    margin-left: 17px;
+    display: inline-block;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 2px;
+      width: 30px;
+      background: $theme_color;
+      margin-bottom: 7px;
+
+      &:nth-child(2) {
+        width: 70%;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .humbergur {
+    display: inline-block;
+    cursor: pointer;
+
+    &.show span {
+      &:first-child {
+        transform: rotate(45deg) translate(8px, 9px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+
+    span {
+      width: 25px;
+      height: 1px;
+      background: #444444;
+      margin: 5px 0;
+      display: block;
+      transition: all 0.3s ease 0s;
+    }
+  }
+
+  .cBtn {
+    @media (max-width: 767px) {
+      padding: 0 18px;
+      height: 45px;
+      line-height: 45px;
+      font-size: 13px !important;
+    }
+    @media (min-width: 1201px) and (max-width: 1599px) {
+      padding: 0 21px;
+    }
+  }
+
+  .languageSelector {
+    background: #ffffff;
+    margin-right: 20px;
+    padding: 0 11px;
+    height: 52px;
+    padding-top: 11px;
+    border-radius: 5px;
+    border: 1px solid #0EC64E;
+    svg {
+      margin-top: 5px;
+    }
+  }
+}
+
+.languageSelect, .languageSelect > div {
+  background: transparent !important;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+}
+li.MuiMenuItem-root{
+  padding: 5px!important;
+  text-transform: uppercase;
+  font-size: 9px;
+  min-height: 35px;
+  width: 50px;
+  justify-content: center;
+  img{
+    max-width: 12px;
+    margin-right: 3px;
+  }
+}

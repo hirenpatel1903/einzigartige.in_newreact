@@ -1,0 +1,155 @@
+@import "../../mixin";
+
+.aboutAgencyWrapper{
+  position: relative;
+  z-index: 5;
+  padding: 120px 0 80px;
+  @media (min-width: 1201px) and (max-width: 1599px) {
+    padding-bottom: 100px;
+    &.pb-120{
+      padding-bottom: 80px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding: 50px 0 50px;
+    &.pb-120{
+      padding-bottom: 50px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 0;
+    padding-top: 50px;
+    &.pb-120{
+      padding-bottom: 50px;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 40px 0 50px;
+    &.pb-120{
+      padding-bottom: 40px;
+    }
+  }
+  .textThumb{
+    @media (min-width: 1700px) {
+      margin-right: -220px;
+      &.rthumb{
+        margin-right: 0;
+        margin-left: -220px;
+      }
+    }
+  }
+  .bgShape3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+}
+.textContent{
+  strong{
+    font-size: 22px;
+    color: $theme_color;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    padding-bottom: 11px;
+    display: inline-block;
+    @media (min-width: 992px) and (max-width: 1200px) {
+      font-size: 20px;
+      margin-bottom: 17px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 19px;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 767px) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      height: 2px;
+      width: 50%;
+      background: #5e5d5d;
+    }
+    &:after{
+      left: 55%;
+      width: 15px;
+    }
+  }
+  h2{
+    font-size: 46px;
+    font-weight: 500;
+    color: #272727;
+    font-family: 'Futura', sans-serif;
+    line-height: 57px;
+    @media (min-width: 1201px) and (max-width: 1599px) {
+      font-size: 35px;
+      line-height: 48px;
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      font-size: 32px;
+      line-height: 47px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 33px;
+      line-height: 49px;
+    }
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 500;
+    }
+    span{
+      font-weight: 500;
+      font-family: 'Futura', sans-serif;
+      color: $theme_color;
+    }
+  }
+  h4{
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 56px;
+    color: #272727;
+    @media (min-width: 1201px) and (max-width: 1599px) {
+      font-size: 35px;
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      font-size: 32px;
+      line-height: 50px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 31px;
+      line-height: 48px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 37px;
+      color: #272727;
+    }
+  }
+  p{
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #181818;
+    font-weight: 500;
+    @media (max-width: 767px) {
+      font-size: 17px;
+    }
+  }
+  a{
+    margin-top: 38px;
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
+  }
+}

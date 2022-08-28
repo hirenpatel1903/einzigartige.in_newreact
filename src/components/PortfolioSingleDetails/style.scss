@@ -1,0 +1,91 @@
+@import "../../mixin";
+.portfolioSingleDetails{
+  padding: 120px 0;
+  @media (min-width: 1201px) and (max-width: 1599px) {
+    padding: 100px 0;
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    padding: 80px 15px 20px;
+  }
+  @media (max-width: 767px) {
+    padding: 60px 0 0;
+  }
+  .prtMetaTop{
+    margin-bottom: 20px;
+    @media (max-width: 991px) {
+      margin-bottom: 10px;
+    }
+    h2{
+      font-size: 30px;
+      color: #282828;
+      line-height: 39px;
+      @media (min-width: 992px) and (max-width: 1200px) {
+        font-size: 26px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 28px;
+      }
+      @media (max-width: 767px) {
+        font-size: 20px;
+        padding-right: 0;
+        line-height: 30px;
+        margin-bottom: 15px;
+      }
+      span{
+        color: $theme_color;
+      }
+    }
+    p{
+      font-size: 15px;
+      color: #706773;
+      line-height: 32px;
+    }
+  }
+  .prtSocial{
+    li{
+      display: inline-block;
+      a{
+        display: block;
+        color: #bbb1c3;
+        font-size: 20px;
+        margin-left: 0;
+        margin-right: 11px;
+        &:hover{
+          color: $theme_color;
+        }
+      }
+    }
+  }
+
+  .prtImages{
+    @media (min-width: 992px) and (max-width: 1200px) {
+      padding-right: 30px;
+    }
+    img{
+      border-radius: 5px;
+      overflow: hidden;
+      -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      -moz-box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+  }
+
+  .prtdRightContent{
+    @media (min-width: 992px) and (max-width: 1200px) {
+      padding-right: 10px;
+    }
+    h5{
+      font-size: 22px;
+      color: $theme_color;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 16px;
+      color: #686868;
+      font-weight: 400;
+      margin-bottom: 25px;
+      line-height: 30px;
+    }
+  }
+}
+

@@ -1,0 +1,97 @@
+@import "../../mixin";
+.mobileMenu{
+  background: #ffffff;
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  -webkit-box-shadow: 6px 0 15px rgba(0,0,0,0.03);
+  -moz-box-shadow: 6px 0 15px rgba(0,0,0,0.03);
+  box-shadow: 6px 0 15px rgba(0,0,0,0.03);
+  overflow-x: auto;
+
+  transition: all 0.3s ease 0s;
+  &.hidden{
+    left: -100%;
+  }
+  .sLogo{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+  }
+  >ul{
+    padding: 20px 0;
+    li{
+      display: block;
+      padding: 0;
+      a{
+        display: block;
+        padding: 13px 30px;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: #222;
+        &:hover{
+          color: $theme_color;
+        }
+      }
+      .mItem{
+        display: block;
+        position: relative;
+        z-index: 1;
+        &:hover i{
+          color: $theme_color;
+        }
+        span{
+          display: block;
+          padding: 13px 30px;
+          font-size: 16px;
+          letter-spacing: 0;
+          text-transform: capitalize;
+          font-weight: 500;
+          color: #222;
+          cursor: pointer;
+          user-select: none;
+          &:hover{
+            color: $theme_color;
+          }
+        }
+        >div{
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 22px;
+        }
+      }
+      .subMenu{
+        background: #f9f9f9;
+        margin-left: 20px;
+        a{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.menuHoverlay{
+  position: fixed;
+  background: red;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  &.show{
+    visibility: visible;
+  }
+}

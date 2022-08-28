@@ -1,0 +1,88 @@
+@import "../../mixin";
+
+.BlogSection {
+  position: relative;
+  z-index: 5;
+  padding: 100px 0 0;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding-top: 80px;
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+
+  .slick-slide {
+    padding: 15px;
+  }
+
+  .singleBlog {
+    padding: 30px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    @media (min-width: 768px) and (max-width: 991px) {
+      padding: 15px;
+    }
+    @media (max-width: 767px) {
+      padding: 15px;
+    }
+
+    .thumb {
+      border-radius: 15px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      @media (max-width: 767px) {
+        border-radius: 5px;
+      }
+
+      img {
+        transition: all 0.5s cubic-bezier(1, -0.18, 0.41, 0.93) 0s;
+      }
+    }
+
+    &:hover {
+      .thumb {
+        img {
+          transform: scale(1.04) rotate(1deg);
+        }
+      }
+    }
+
+    .content {
+      .metaTop {
+        margin-bottom: 15px;
+
+        p {
+          display: inline-block;
+          margin-left: 48px;
+          color: #606060;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+
+      h4 a {
+        display: block;
+        font-size: 19px;
+        color: #272727;
+        line-height: 34px;
+        min-height: 74px;
+        @media (min-width: 768px) and (max-width: 991px) {
+          font-size: 17px;
+          line-height: 29px;
+          font-weight: 600;
+        }
+        @media (max-width: 767px) {
+          line-height: 26px;
+          font-weight: 600;
+          font-size: 17px;
+        }
+
+        &:hover {
+          color: $theme_color;
+        }
+      }
+    }
+  }
+}

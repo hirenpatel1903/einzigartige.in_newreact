@@ -1,0 +1,118 @@
+
+.commentArea{
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding: 70px 0 0;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 50px 0 50px;
+  }
+  @media (max-width: 767px) {
+    padding: 30px 0 0;
+  }
+  h2{
+    font-size: 20px;
+    line-height: 33px;
+    color: #2f2f2f;
+    margin-bottom: 30px;
+    @media (max-width: 767px) {
+      font-size: 17px;
+    }
+  }
+  .commentList{
+    &:last-child{
+      .commentCard{
+        border: none;
+        padding: 0;
+      }
+    }
+    .commentCard{
+      overflow: hidden;
+      padding-bottom: 22px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #f0ecec;
+      @media (min-width: 992px) and (max-width: 1200px) {
+        margin-bottom: 0;
+      }
+      @media (max-width: 767px) {
+        padding: 15px;
+      }
+      &.ml-80{
+        @media (max-width: 767px) {
+          padding-left: 0;
+        }
+      }
+      .thumb{
+        float: left;
+        height: 95px;
+        width: 95px;
+        line-height: 95px;
+        background: #0EC64E;
+        margin-right: 20px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 700;
+        @media (max-width: 767px) {
+          height: 75px;
+          width: 75px;
+          line-height: 75px;
+          margin-right: 10px;
+        }
+      }
+      .content{
+        overflow: hidden;
+        .cmntMetaTop{
+          margin-bottom: 20px;
+          @media (max-width: 767px) {
+            margin-bottom: 10px;
+          }
+          h4{
+            font-size: 17px;
+            color: #2f2f2f;
+            font-weight: 600;
+            @media (max-width: 767px) {
+              font-size: 19px;
+            }
+          }
+          span{
+            font-size: 13px;
+            color: #9a929d;
+            letter-spacing: 0;
+            @media (max-width: 767px) {
+              font-size: 12px;
+            }
+          }
+        }
+        p{
+          font-size: 14px;
+          color: #6e6571;
+          margin-bottom: 20px;
+          @media (max-width: 767px) {
+            font-size: 15px;
+            line-height: 23px;
+          }
+        }
+        .replyBtn{
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 0;
+          color: #0ec64e;
+          cursor: pointer;
+          i{
+            margin-left: 5px;
+            transition: all 0.3s ease 0s;
+          }
+          &:hover{
+            i{
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

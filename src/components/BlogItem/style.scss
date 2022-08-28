@@ -1,0 +1,91 @@
+@import "../../mixin";
+
+.blogItem {
+  margin-bottom: 50px;
+  overflow: hidden;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .thumb {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 11px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    .icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+      height: 100px;
+      width: 100px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: rgba(205, 255, 174, 0.8);
+      text-align: center;
+      line-height: 105px;
+      color: #ffffff;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    .metatop {
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      a {
+        display: block;
+        font-size: 24px;
+        color: #2f2f2f;
+        line-height: 41px;
+        margin-bottom: 15px;
+        @media (min-width: 992px) and (max-width: 1200px) {
+          font-size: 24px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+          font-size: 24px;
+        }
+        @media (max-width: 767px) {
+          font-size: 20px;
+          line-height: 34px;
+        }
+
+        &:hover {
+          color: $theme_color;
+        }
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: #818181;
+      letter-spacing: 0;
+    }
+
+    > a {
+      margin-top: 30px;
+    }
+  }
+}
+
+body {
+  span.date {
+    font-size: 14px;
+    color: #818181;
+    letter-spacing: 0;
+
+    i {
+      margin-left: 5px;
+    }
+  }
+}

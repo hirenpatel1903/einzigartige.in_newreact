@@ -1,0 +1,38 @@
+.cookieAlert {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 19px 15%;
+  background: #181818;
+  text-align: center;
+
+  p {
+    color: #ffffff;
+    line-height: 20px;
+    font-size: 13px;
+
+    button {
+      background: linear-gradient(to bottom, #0088cc, #0044cc);
+      color: #fff;
+      font-size: 13px;
+      border: none;
+      height: 27px;
+      width: 38px;
+      border-radius: 3px;
+      margin-right: 30px;
+      line-height: 17px;
+    }
+  }
+
+  .closeBtn {
+    position: absolute;
+    left: 9px;
+    top: 1px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}

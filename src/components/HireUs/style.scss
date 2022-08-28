@@ -1,0 +1,38 @@
+.sireUsWrapper{
+  position: relative;
+  z-index: 1;
+  padding: 80px 0;
+  @media (max-width: 1350px) {
+    padding: 0 15px 70px;
+  }
+  @media (max-width: 767px) {
+      text-align: center;
+    padding-bottom: 80px;
+  }
+  .content{
+    text-align: center;
+    h2{
+      font-size: 36px;
+      color: #181818;
+      line-height: 55px;
+      margin-bottom: 45px;
+      @media (min-width: 1201px) and (max-width: 1599px) {
+        font-size: 32px;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        font-size: 29px;
+        color: #181818;
+        line-height: 42px;
+        margin-bottom: 45px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 31px;
+        line-height: 39px;
+      }
+      @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 35px;
+      }
+    }
+  }
+}

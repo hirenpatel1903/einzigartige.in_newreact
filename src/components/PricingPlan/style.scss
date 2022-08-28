@@ -1,0 +1,120 @@
+.pricingPlan{
+  padding-bottom: 120px;
+  position: relative;
+  z-index: 5;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding-bottom: 60px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 20px;
+  }
+  .bgShapeNew1{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    z-index: -1;
+  }
+}
+.planpricelists{
+  @media (min-width: 1755px) {
+    margin-left: -120px;
+  }
+  @media (max-width: 767px) {
+    max-width: 450px;
+    margin: auto;
+  }
+  .swiper-container{
+    padding-bottom: 20px;
+    .swiper-wrapper{
+      padding-bottom: 40px;
+      .swiper-slide{
+        @media (max-width: 1250px) {
+          padding: 3px;
+          height: auto;
+        }
+      }
+    }
+    .swiper-slide-active{
+      .signlePrice{
+        background: #ffffff!important;
+      }
+    }
+  }
+  .sbArrow{
+    position: absolute;
+    left: calc(50% - 50px);
+    bottom: 0;
+    z-index: 9;
+    cursor: pointer;
+    &.swiper-button-disabled{
+      opacity: 0.3;
+    }
+  }
+  .sbnext{
+    bottom: 7px;
+    left: auto;
+    right: calc(50% - 50px);
+  }
+}
+.signlePrice{
+  position: relative;
+  z-index: 1;
+  background: #F4F7FA;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.06);
+  padding: 10px 5px 50px;
+  overflow: hidden;
+  border-top: 5px solid #FFC134;
+  transition: background-color 0.6s ease-in-out 0s !important;
+  @media (max-width: 992px) {
+    background: #ffffff;
+  }
+
+  @media (max-width: 767px) {
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.03);
+  }
+
+  .price{
+    font-size: 32px;
+    color: #272727;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  h2{
+    position: relative;
+    z-index: 1;
+    span{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 600;
+      margin-bottom: 35px;
+      font-family: 'Futura', sans-serif;
+    }
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #dddddd;
+  }
+  ul{
+    li{
+      display: block;
+      font-size: 14px;
+      color: #606060;
+      letter-spacing: 0;
+      margin: 12px 0;
+    }
+  }
+  a{
+    margin-top: 20px;
+  }
+}
+.displayInlineBlock{
+  display: inline-block;
+}

@@ -1,0 +1,50 @@
+@import "../../mixin";
+.portfolioFilter{
+  text-align: center;
+  padding-top: 90px;
+  margin-bottom: 30px;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding-top: 90px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-top: 80px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 50px;
+  }
+  button{
+    margin: 0 5px;
+    padding: 0 15px!important;
+    height: 45px!important;
+    line-height: 45px!important;
+    @media (max-width: 991px) {
+      margin-bottom: 10px;
+      height: 43px;
+      line-height: 43px;
+      padding: 0 23px;
+    }
+    &:hover,
+    &.active{
+      color: #ffffff!important;
+      background: $theme_gradiant!important;
+    }
+    span{
+      @media (max-width: 767px) {
+        font-size: 13px;
+      }
+    }
+  }
+}
+.portfolioGrid{
+  padding: 0 75px;
+  padding-bottom: 120px;
+  @media (min-width: 768px) and (max-width: 1200px) {
+    padding-bottom: 50px!important;
+  }
+  @media (max-width: 767px) {
+    padding: 0 15px;
+  }
+  img{
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,70 @@
+.breadCrumb{
+  padding: 170px 0 260px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(45deg, #34d86d, #16cc55);
+  @media (min-width: 1201px) and (max-width: 1599px) {
+    padding: 134px 0 185px;
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    padding: 150px 0 120px;
+  }
+  @media (max-width: 767px) {
+    padding: 100px 0 80px;
+  }
+  .breadCrumbContent{
+    text-align: center;
+    @media (max-width: 1350px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    span{
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 600;
+      display: block;
+      letter-spacing: 0;
+      margin-bottom: 20px;
+      @media (max-width: 767px) {
+        font-size: 19px;
+      }
+    }
+    h2{
+      font-size: 54px;
+      color: #ffffff;
+      font-weight: 700;
+      line-height: 79px;
+      letter-spacing: 0;
+      @media (min-width: 1201px) and (max-width: 1599px) {
+        font-size: 34px;
+      }
+      @media (min-width: 992px) and (max-width: 1200px) {
+        font-size: 32px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 29px;
+        line-height: 40px;
+      }
+      @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 34px;
+      }
+    }
+  }
+
+  .breadcrumbBg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .brdShape{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    opacity: 0.07;
+  }
+}

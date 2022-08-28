@@ -1,0 +1,55 @@
+{
+  "contact": {
+    "pagename": "Contact us",
+    "banner_title": "Where We Are? Let's Find Out!",
+    "contact_number": "+1-202-555-0101 ff",
+    "ContactNumberTitle": "Contact Number",
+    "EmailAddressTitle": "Email address",
+    "OfficeLocationTitle": "Office Location",
+    "OfficeLocationAddress": "62 Arlington St. Suite 100 Boston, CA 01117, USA"
+  },
+  "newsLetter": {
+    "Title1": "What your",
+    "Title2": "challenges?",
+    "SubTitle": "NewsLetter",
+    "Description": "Subscribe today to make sure you are update to date on life at RSD and the industry that surrounds us. insights into the Digital agency activity",
+    "SubscribtionNotice": "Subscribe for email updates ",
+    "SubscribtionNoticeDay": "( only once a week  )"
+  },
+  "Home": {
+    "HeroArea": {
+      "Title": "A FULL SERVICE CREATIVE AGENCY",
+      "SubTitle": "Always we ready to help you",
+      "Description": "Sed ac risus vitae eros volutpat semper eget ac felis. Nulla sollicitudin tempor libero eget sodales.",
+      "ButtonText": "About Us"
+    },
+    "Testimonial": {
+      "Subtitle": "Testimonial"
+    },
+    "PricingPlan": {
+      "Title": "Affordable Pricing Plan For Customer",
+      "SubTitle": "Pricing Plan",
+      "Description": "Nam quis laoreet nisl. Vivamus nec quam magna.interdum etus blandit hendrerit ornare. Sed id leo nulla.",
+      "Monthly": "Monthly",
+      "Yearly": "Yearly"
+    },
+    "OurExpert": {
+      "Title": "Meet Our Team Member",
+      "SubTitle": "Our Expert"
+    },
+    "BlogSection": {
+      "Title": "Check Our Company News",
+      "SubTitle": "Our Blog"
+    },
+    "ContactUs": {
+      "Title": "Got A Problem Contact With Us.",
+      "SubTitle": "Contact Us"
+    }
+  },
+  "Footer": {
+    "Copyright": "Copyrights 2019 Ammelias",
+    "QuickLink": "Quick Link",
+    "Services": "Services",
+    "Newsletter": "Newsletter"
+  }
+}

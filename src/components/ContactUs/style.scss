@@ -1,0 +1,115 @@
+@import "../../mixin";
+.contactUsWrapper{
+  position: relative;
+  z-index: 4;
+  padding: 100px 0;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding-bottom: 70px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 0 20px;
+  }
+
+  &.h2Contact{
+    padding-bottom: 140px;
+    @media (min-width: 1201px) and (max-width: 1599px) {
+      padding-bottom: 90px;
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      padding-bottom: 70px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      padding-bottom: 60px;
+    }
+    @media (max-width: 767px) {
+      padding-bottom: 50px;
+    }
+  }
+
+  .thumb{
+    margin-top: 150px;
+    @media (min-width: 1440px) {
+      margin-right: -150px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: 0;
+      text-align: center;
+    }
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
+  }
+  .contactRight{
+    @media (max-width: 1350px) {
+      padding-bottom: 20px;
+    }
+    .textContent{
+      padding-left: 20%;
+      @media (max-width: 767px) {
+        padding-left: 0;
+      }
+    }
+    form{
+      margin-top: 20px;
+    }
+  }
+}
+
+.inputStyleBasic{
+  width: 100%;
+  >div{
+    padding: 0;
+    &.Mui-focused{
+      fieldset{
+        border-color: $theme_color!important;
+      }
+    }
+    fieldset{
+      border-color: $theme_color;
+      border-width: 1px;
+      border-radius: 0;
+    }
+    textarea,
+    input{
+      height: 60px;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 30px;
+      font-size: 18px;
+      letter-spacing: 0;
+      &::-webkit-input-placeholder {
+        color: #8B8B8C;
+        opacity: 1;
+      }
+      &:-ms-input-placeholder {
+        color: #8B8B8C;
+        opacity: 1;
+      }
+      &::placeholder {
+        color: #8B8B8C;
+        opacity: 1;
+      }
+    }
+    textarea{
+      height: 220px!important;
+      padding: 18.5px 14px;
+      padding-top: 30px;
+      padding-left: 30px;
+      line-height: 25px;
+    }
+  }
+  p{
+    font-size: 14px;
+    color: red;
+  }
+}
+
+.bgShape8{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}

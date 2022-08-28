@@ -1,0 +1,32 @@
+
+.commentForm{
+  @media (max-width: 1350px) {
+    padding-bottom: 20px;
+  }
+  h2{
+    font-size: 20px;
+    line-height: 33px;
+    color: #2f2f2f;
+    margin-bottom: 30px;
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 24px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+  input,
+  textarea{
+    background: #fff;
+  }
+}
+
+.inputStyleBasic{
+  div fieldset{
+    border-color: #e6e6e6;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+}
